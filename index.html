@@ -8,20 +8,23 @@
     <title>Library</title>
 </head>
 <body>
-    <form class="book-form" action="" method="post">
-        <label for="author">Author:</label>
-        <input type="text" name="author" id="author" required>
-        <label for="title">Title:</label>
-        <input type="text" name="title" id="title" required>
-        <label for="page-count">Number of Pages:</label>
-        <input type="number" name="numberOfPages" id="number-of-pages" required>
-        <label for="have-read-select">Has this book been read?</label>
-        <select name="haveRead" id="have-read-select" required>
-            <option value="true">Yes</option>
-            <option value="false">No</option>
-        </select>
-        <button type="submit">Add to Library</button>
-    </form>
+    <dialog>
+        <form class="book-form" action="" method="">
+            <label for="author">Author:</label>
+            <input type="text" name="author" id="author" required>
+            <label for="title">Title:</label>
+            <input type="text" name="title" id="title" required>
+            <label for="page-count">Number of Pages:</label>
+            <input type="number" name="numberOfPages" id="number-of-pages" required>
+            <label for="have-read-select">Has this book been read?</label>
+            <select name="haveRead" id="have-read-select" required>
+                <option value="true">Yes</option>
+                <option value="false">No</option>
+            </select>
+            <button class="cancel" type="submit">Cancel</button>
+            <button type="submit">Add to Library</button>
+        </form>
+    </dialog>
 
     <table>
         <thead>
@@ -32,9 +35,9 @@
                 <th>Have Read</th>
             </tr>
         </thead>
-        <tbody class="table-body">
-
-        </tbody>
+        <tbody class="table-body"></tbody>
     </table>
+
+    <button class="add-book-button" type="button">ADD BOOK</button>
 </body>
 </html>
